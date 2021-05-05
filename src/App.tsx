@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 
+<<<<<<< HEAD
 import { Button } from './components/Button';
 
 // import { SideBar } from './components/SideBar';
+=======
+import { SideBar } from './components/SideBar';
+>>>>>>> side-bar
 import { Content } from './components/Content';
 
 import { api } from './services/api';
@@ -59,6 +63,7 @@ export function App() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
+<<<<<<< HEAD
       <nav className="sidebar">
         <span>Watch<p>Me</p></span>
 
@@ -76,6 +81,14 @@ export function App() {
 
       </nav>
 
+=======
+     
+     <SideBar 
+     genres={genres} 
+     selectedGenreId={selectedGenreId} 
+     click={handleClickButton} 
+     />
+>>>>>>> side-bar
       <Content movies={movies} selectedGenre={selectedGenre} />
     </div>
   )
